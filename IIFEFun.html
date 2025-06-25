@@ -1,0 +1,28 @@
+<script>
+    var counter = (function() {
+	var count = 0;
+
+	return {
+		increment: function() {
+			count++;
+		},
+		decrement: function() {
+			count--;
+		},
+		getCount: function() {
+			return count;
+		}
+	};
+})();
+
+// Increment the counter
+counter.increment();
+counter.increment();
+counter.increment();
+
+// document.write(counter.getCount()); // Output: 3
+counter.getCount()
+// Trying to access the private count variable directly
+// document.write(counter.count); // Output: undefined (cannot access private variable)
+counter.count()
+</script>

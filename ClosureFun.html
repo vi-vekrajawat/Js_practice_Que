@@ -1,0 +1,24 @@
+<script>
+ function add(){
+    let a = 5
+    let b = 6
+  
+    return a+b
+ }
+//  add()
+ document.write(add())
+
+ /*  
+ Yahan do cheezen ho rahi hain:
+
+add() kuch return nahi kar raha, sirf document.write(11) kar raha hai.
+
+JavaScript mein agar koi function kuch return na kare, toh by default undefined return hota hai.
+
+Toh jab aap document.write(add()) likhte ho, tab:
+
+Pehle add() call hota hai → document.write(11) hota hai (screen pe 11 likh deta hai).
+
+Fir add() return karta hai undefined → usko document.write(...) mein diya gaya hai → document.write(undefined) bhi execute ho jata hai.
+ */
+</script>

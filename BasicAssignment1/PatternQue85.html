@@ -1,0 +1,83 @@
+<!-- <script>
+    let num = 5
+    let nj = 1
+    let ni = 1
+
+    for(let i =1;i<=num*2-1;i++){
+        for(j = 1;j<=num*2-1;j++){
+            if(j==num){
+                if(i<=num-1){
+                document.write(ni)//1,2,3,4,5,6,7,8,9
+                ni++
+                }
+                else if(i>=num+1){               
+                document.write(ni-1)
+                ni--
+                }
+            }
+             
+            else if(i==5){
+                if(j<=num){
+            //    document.write(nj+" ")//1,2,3,4,5
+            //    nj++
+            document.write(j)
+                }
+               else{
+                // document.write(nj-1+" ")//4,3,2,1
+                // nj--
+                document.write(num*2-j)
+               }
+
+               
+          
+
+
+
+            }
+            else{
+                document.write("@")
+            }
+        }
+        document.write("<br>")
+       
+    }
+</script> -->
+
+<script>
+    let num = 11
+    let nj = 1
+    let ni = 1
+
+    for (let i = 1; i <= num * 2 - 1; i++) {
+        for (let j = 1; j <= num * 2 - 1; j++) {
+
+            // Handle middle horizontal row first
+            if (i == num) {
+                if (j <= num) {
+                    document.write(j)
+                } else {
+                    document.write(num * 2 - j)
+                }
+            }
+
+            // Handle middle vertical line (except middle row)
+            else if (j == num) {
+                if (i < num) {
+                    document.write(ni)
+                    ni++
+                } 
+                else {
+                    ni--
+                    document.write(ni)
+                }
+            }
+            else if(j>=1&&j<=num){
+                document.write(" "+" &nbsp;")
+            }
+            // else {
+            //     // document.write("&nbsp;")
+            // }
+        }
+        document.write("<br>")
+    }
+</script>
