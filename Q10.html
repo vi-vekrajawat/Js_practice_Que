@@ -1,0 +1,33 @@
+<script>
+    const employees = [
+  { name: "John", salary: 50000, department: "IT" },
+  { name: "Jane", salary: 60000, department: "HR" },
+  { name: "Bob", salary: 55000, department: "IT" },
+  { name: "Sophie", salary: 75000, department: "HR" },
+  { name: "Mike", salary: 65000, department: "IT" },
+  { name: "Emily", salary: 80000, department: "HR" },
+  { name: "David", salary: 70000, department: "IT" },
+];
+const departMent1 = []
+for(let i = 0;i<employees.length;i++){
+    if(!(departMent1.includes(employees[i].department))){
+
+    departMent1.push(employees[i].department)
+    }
+}
+for(let j = 0;j<departMent1.length;j++){
+let count=0
+    for(k =0;k<employees.length;k++){
+        if(employees[k].department===departMent1[j]){
+            count++
+        }
+    }
+
+    const dept1 = employees.filter(ds=>{
+        if(ds.department===departMent1[j] )
+             return true}).map(de => de.salary).reduce((acc,sum)=> acc+sum  ,0)
+            if(parseInt(dept1/count)>65000)
+                document.write("Department :"+departMent1[j]+", Average : "+parseInt(dept1/count)+"<br>")
+    }
+
+</script>

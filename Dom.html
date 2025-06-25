@@ -1,0 +1,82 @@
+<!-- <html>
+<head></head>
+<body>
+    <label>Enter Value 1: </label>
+    <input type="text" id="val1" />
+    <br />
+    <br />
+    <label>Enter Value 2: </label>
+    <input type=".text" id="val2" />
+    <br />
+    <button onclick="getAdd()">Click To Add</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+        function getAdd() {
+            // // Fetch the value of input with id val1
+            // const num1 = Number(document.getElementById("val1").value);
+            // // Fetch the value of input with id val2
+            // const num2 = Number(document.getElementById("val2").value);
+            // const add = num1 + num2;
+            // console.log(add);
+            // // Displays the result in paragraph using dom
+            // document.getElementById("result").innerHTML = "Addition : " + add;
+            // // Changes the color of paragraph tag with red
+            // document.getElementById("result").style.color = "red";
+
+            const num = Number(document.getElementById("val1").value)
+            const num2 = Number(document.getElementById("val2").value)
+            const add = num+num2
+            console.log(add)
+            document.getElementById("add").innerHTML = "Addition :"+add
+            document.getElementById("add").style.color="red"
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="geeks">GeeksforGeeks</h1>
+    <h2 id="feeks">DOM ElementById() Method </h2>
+    <p id="duggu">Hello durgesh </p>
+    <input type="button" onclick="geeks()" value="Click here to change color" name="" id="inpt">
+
+
+    <script>
+        let i = 0;
+        let arr = ["red", "blue", "pink", "orange"]
+        function geeks() {
+                let dig = document.getElementById("duggu")
+                dig.innerHTML = "Hello Durgeshwari"
+                dig.style.color = arr[i]
+                i++;
+                if(i>3)
+                  i=0;
+        }
+
+        // function f(){
+        //     let lepo = document.getElementById("feeks")
+        //     lepo.style.color = "blue"
+        //     lepo.style.fontSize = "500px"
+        //     // lepo.style.border = "dotted"
+        // }
+
+        // let dm = document.getElementById("feeks")
+        // dm.style.color = "red"
+        // dm.style.fontSize = "273px"
+
+
+    </script>
+
+</body>
+
+</html>

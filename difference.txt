@@ -1,0 +1,7 @@
+
+const nums = [10, 60, 45, 90, 30];
+document.write(arr)
+let arr = names.map(name=> name.toUpperCase())
+let getNum = nums.filter(num=>num>50)
+document.write(getNum)
+const names = ['vikas', 'thakur', 'shivam']

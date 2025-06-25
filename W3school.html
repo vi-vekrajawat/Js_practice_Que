@@ -1,0 +1,12 @@
+<script>
+    function greet(callback,name ) {
+    document.write("Hello, " + name +"<br>");
+    callback();
+}
+
+function sayBye() {
+    document.write("Goodbye!"+"<br>");
+}
+
+greet( sayBye(),"Ajay");
+</script>

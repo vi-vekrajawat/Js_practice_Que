@@ -1,0 +1,18 @@
+<script>
+    const cart = [
+  { item: "shirt", price: 500 },
+  { item: "jeans", price: 1200 },
+  { item: "cap", price: 300 }
+]
+// let sum =0
+// let addPrice = cart.reduce((acc,sum )=>{
+//     acc+sum.price },0)
+// document.write(addPrice)
+// it is incomplete
+
+let addPrice = cart.map(p=>p.price).reduce((acc,sum) => acc+sum,0)
+document.write(addPrice)
+
+
+
+</script>
